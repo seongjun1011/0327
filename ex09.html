@@ -10,7 +10,7 @@
     <h1>글 작성하기</h1> 
     <br>
     <form>
-        <table>
+        <table border="1">
             <tr>
                 <td><label for="Writer">작성자</label></td>
                 <td><input id="Writer" type="text" name="Writer"> </td>
@@ -21,9 +21,40 @@
             </tr>
             <tr>
                 <td><label for="email">이메일</label></td>
-                <td><input id="email" type="text" name="email"> </td>
-                <p>@</p>
-                <td><input id="email" type="text" name="email"> </td>
+                <td>
+                    <input id="email" type="text" name="email"> @ 
+                    <select name="email">
+                        <option value="naver">naver.com</option>
+                        <option value="gmail">gmail.com</option>
+                        <option value="hanmail">hanmail.net</option>
+                    </select>
+                </td>
+            </tr> 
+            <tr>  
+                <td>
+                    <label for="phone">휴대폰</label>
+                </td>
+                <td>
+                    <select name="phone">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="063">063</option>
+                    </select>-
+                    <input type="text">-
+                    <input type="text" name="phone">
+                </td>
+            </tr> 
+            <tr>
+                <td>
+                    <label for="title">글제목</label>
+                    <input type="text" name="title">
+                </td>
+            </tr>
+            <tr align="center">
+                <td>
+                    <label for="content">내용</label>
+
+                </td>
             </tr>
         </table>
     </form>
